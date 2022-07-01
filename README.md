@@ -72,138 +72,139 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 input AMPLIFY {
-	globalAuthRule: AuthRule = { allow: public }
+  globalAuthRule: AuthRule = { allow: public }
 } # FOR TESTING ONLY!
 # Custom PK
 type Todo @model {
-	customId: ID! @primaryKey
-	name: String!
-	description: String
+  customId: ID! @primaryKey
+  name: String!
+  description: String
 }
 
 # Custom PK + SK
 type Todo2 @model {
-	customId: ID! @primaryKey(sortKeyFields: ["createdAt"])
-	name: String!
-	description: String
-	createdAt: AWSDateTime!
-	updatedAt: AWSDateTime
+  customId: ID! @primaryKey(sortKeyFields: ["createdAt"])
+  name: String!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
 }
 
 # Custom PK + SK w/ name + query field
 type Todo3 @model {
-	id: ID!
-	customId: ID!
-		@index(
-			name: "byCustomIdAndCreated"
-			sortKeyFields: ["createdAt"]
-			queryField: "todoByCustomIdAndCreatedAt"
-		)
-	name: String!
-	description: String
-	createdAt: AWSDateTime!
-	updatedAt: AWSDateTime
+  id: ID!
+  customId: ID!
+    @index(
+      name: "byCustomIdAndCreated"
+      sortKeyFields: ["createdAt"]
+      queryField: "todoByCustomIdAndCreatedAt"
+    )
+  name: String!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
 }
 
 # Model w/out CPK
 type Todo4 @model {
-	id: ID!
-	name: String!
-	description: String
-	createdAt: AWSDateTime!
-	updatedAt: AWSDateTime!
+  id: ID!
+  name: String!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
 }
 
 # Model w/out explicit id
 type Todo5 @model {
-	name: String!
-	description: String
+  name: String!
+  description: String
 }
 
 # id as PK + SK
 type Todo6 @model {
-	id: ID! @primaryKey(sortKeyFields: ["name"])
-	name: String!
-	description: String
-	createdAt: AWSDateTime!
-	updatedAt: AWSDateTime
+  id: ID! @primaryKey(sortKeyFields: ["name"])
+  name: String!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
 }
 
 type Todo7 @model {
-	id: ID! @primaryKey(sortKeyFields: ["name", "createdAt"])
-	name: String!
-	description: String
-	createdAt: AWSDateTime!
-	updatedAt: AWSDateTime
+  id: ID! @primaryKey(sortKeyFields: ["name", "createdAt"])
+  name: String!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
 }
 
 # 1.2 Has one - unidirectional
 type Project11 @model {
-	customProjectId: ID! @primaryKey(sortKeyFields: ["name"])
-	name: String!
-	description: String!
-	team: Team11 @hasOne
+  customProjectId: ID! @primaryKey(sortKeyFields: ["name"])
+  name: String!
+  description: String!
+  team: Team11 @hasOne
 }
 
 type Team11 @model {
-	customTeamId: ID! @primaryKey(sortKeyFields: ["name"])
-	name: String!
-	description: String!
+  customTeamId: ID! @primaryKey(sortKeyFields: ["name"])
+  name: String!
+  description: String!
 }
 
 # 1.2 Has one - bidirectional
 type Project12 @model {
-	customProjectId: ID! @primaryKey(sortKeyFields: ["name"])
-	name: String!
-	description: String!
-	team: Team12 @hasOne
+  customProjectId: ID! @primaryKey(sortKeyFields: ["name"])
+  name: String!
+  description: String!
+  team: Team12 @hasOne
 }
 
 type Team12 @model {
-	customTeamId: ID! @primaryKey(sortKeyFields: ["name"])
-	name: String!
-	description: String!
-	project: Project12 @belongsTo
+  customTeamId: ID! @primaryKey(sortKeyFields: ["name"])
+  name: String!
+  description: String!
+  project: Project12 @belongsTo
 }
 
 # 2.1 hasMany - unidirectional
 type Post21 @model {
-	customPostId: ID! @primaryKey(sortKeyFields: ["title"])
-	title: String!
-	content: String!
-	comments: [Comment21] @hasMany
+  customPostId: ID! @primaryKey(sortKeyFields: ["title"])
+  title: String!
+  content: String!
+  comments: [Comment21] @hasMany
 }
 
 type Comment21 @model {
-	customCommentId: ID! @primaryKey(sortKeyFields: ["content"])
-	content: String!
+  customCommentId: ID! @primaryKey(sortKeyFields: ["content"])
+  content: String!
 }
 
 # 2.2 hasMany - bidirectional
 type Post22 @model {
-	customPostId: ID! @primaryKey(sortKeyFields: ["title"])
-	title: String!
-	comments: [Comment22] @hasMany
+  customPostId: ID! @primaryKey(sortKeyFields: ["title"])
+  title: String!
+  content: String!
+  comments: [Comment22] @hasMany
 }
 
 type Comment22 @model {
-	customCommentId: ID! @primaryKey(sortKeyFields: ["content"])
-	content: String!
-	post: Post22 @belongsTo
+  customCommentId: ID! @primaryKey(sortKeyFields: ["content"])
+  content: String!
+  post: Post22 @belongsTo
 }
 
 # Original:
 # 3.1 manyToMany
 type Post31 @model {
-	customPostId: ID!
-	title: String!
-	content: String
-	tags: [Tag31] @manyToMany(relationName: "PostTags31")
+  customPostId: ID!
+  title: String!
+  content: String
+  tags: [Tag31] @manyToMany(relationName: "PostTags31")
 }
 
 type Tag31 @model {
-	customTagId: ID! @primaryKey(sortKeyFields: ["label"])
-	label: String!
-	posts: [Post31] @manyToMany(relationName: "PostTags31")
+  customTagId: ID! @primaryKey(sortKeyFields: ["label"])
+  label: String!
+  posts: [Post31] @manyToMany(relationName: "PostTags31")
 }
 ```

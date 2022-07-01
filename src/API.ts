@@ -6,6 +6,7 @@ export type CreateTodoInput = {
   customId: string,
   name: string,
   description?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodoConditionInput = {
@@ -63,16 +64,21 @@ export type Todo = {
   description?: string | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodoInput = {
   customId: string,
   name?: string | null,
   description?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodoInput = {
   customId: string,
+  _version?: number | null,
 };
 
 export type CreateTodo2Input = {
@@ -81,6 +87,7 @@ export type CreateTodo2Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo2ConditionInput = {
@@ -99,6 +106,9 @@ export type Todo2 = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo2Input = {
@@ -107,11 +117,13 @@ export type UpdateTodo2Input = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodo2Input = {
   customId: string,
   createdAt: string,
+  _version?: number | null,
 };
 
 export type CreateTodo3Input = {
@@ -121,6 +133,7 @@ export type CreateTodo3Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo3ConditionInput = {
@@ -158,6 +171,9 @@ export type Todo3 = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo3Input = {
@@ -167,10 +183,12 @@ export type UpdateTodo3Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodo3Input = {
   id: string,
+  _version?: number | null,
 };
 
 export type CreateTodo4Input = {
@@ -179,6 +197,7 @@ export type CreateTodo4Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo4ConditionInput = {
@@ -198,6 +217,9 @@ export type Todo4 = {
   description?: string | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo4Input = {
@@ -206,16 +228,19 @@ export type UpdateTodo4Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodo4Input = {
   id: string,
+  _version?: number | null,
 };
 
 export type CreateTodo5Input = {
   name: string,
   description?: string | null,
   id?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo5ConditionInput = {
@@ -233,16 +258,21 @@ export type Todo5 = {
   id: string,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo5Input = {
   name?: string | null,
   description?: string | null,
   id: string,
+  _version?: number | null,
 };
 
 export type DeleteTodo5Input = {
   id: string,
+  _version?: number | null,
 };
 
 export type CreateTodo6Input = {
@@ -251,6 +281,7 @@ export type CreateTodo6Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo6ConditionInput = {
@@ -269,6 +300,9 @@ export type Todo6 = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo6Input = {
@@ -277,11 +311,13 @@ export type UpdateTodo6Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodo6Input = {
   id: string,
   name: string,
+  _version?: number | null,
 };
 
 export type CreateTodo7Input = {
@@ -290,6 +326,7 @@ export type CreateTodo7Input = {
   description?: string | null,
   createdAt?: string | null,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type ModelTodo7ConditionInput = {
@@ -307,6 +344,9 @@ export type Todo7 = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateTodo7Input = {
@@ -315,18 +355,21 @@ export type UpdateTodo7Input = {
   description?: string | null,
   createdAt: string,
   updatedAt?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTodo7Input = {
   id: string,
   name: string,
   createdAt: string,
+  _version?: number | null,
 };
 
 export type CreateProject11Input = {
   customProjectId: string,
   name: string,
   description: string,
+  _version?: number | null,
   project11TeamId?: string | null,
   project11TeamName?: string | null,
 };
@@ -348,6 +391,9 @@ export type Project11 = {
   team?: Team11 | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
   project11TeamId?: string | null,
   project11TeamName?: string | null,
 };
@@ -359,12 +405,16 @@ export type Team11 = {
   description: string,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdateProject11Input = {
   customProjectId: string,
   name: string,
   description?: string | null,
+  _version?: number | null,
   project11TeamId?: string | null,
   project11TeamName?: string | null,
 };
@@ -372,12 +422,14 @@ export type UpdateProject11Input = {
 export type DeleteProject11Input = {
   customProjectId: string,
   name: string,
+  _version?: number | null,
 };
 
 export type CreateTeam11Input = {
   customTeamId: string,
   name: string,
   description: string,
+  _version?: number | null,
 };
 
 export type ModelTeam11ConditionInput = {
@@ -391,17 +443,20 @@ export type UpdateTeam11Input = {
   customTeamId: string,
   name: string,
   description?: string | null,
+  _version?: number | null,
 };
 
 export type DeleteTeam11Input = {
   customTeamId: string,
   name: string,
+  _version?: number | null,
 };
 
 export type CreateProject12Input = {
   customProjectId: string,
   name: string,
   description: string,
+  _version?: number | null,
   project12TeamId?: string | null,
   project12TeamName?: string | null,
 };
@@ -423,6 +478,9 @@ export type Project12 = {
   team?: Team12 | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
   project12TeamId?: string | null,
   project12TeamName?: string | null,
 };
@@ -435,6 +493,9 @@ export type Team12 = {
   project?: Project12 | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
   team12ProjectId?: string | null,
   team12ProjectName?: string | null,
 };
@@ -443,6 +504,7 @@ export type UpdateProject12Input = {
   customProjectId: string,
   name: string,
   description?: string | null,
+  _version?: number | null,
   project12TeamId?: string | null,
   project12TeamName?: string | null,
 };
@@ -450,12 +512,14 @@ export type UpdateProject12Input = {
 export type DeleteProject12Input = {
   customProjectId: string,
   name: string,
+  _version?: number | null,
 };
 
 export type CreateTeam12Input = {
   customTeamId: string,
   name: string,
   description: string,
+  _version?: number | null,
   team12ProjectId?: string | null,
   team12ProjectName?: string | null,
 };
@@ -473,6 +537,7 @@ export type UpdateTeam12Input = {
   customTeamId: string,
   name: string,
   description?: string | null,
+  _version?: number | null,
   team12ProjectId?: string | null,
   team12ProjectName?: string | null,
 };
@@ -480,12 +545,14 @@ export type UpdateTeam12Input = {
 export type DeleteTeam12Input = {
   customTeamId: string,
   name: string,
+  _version?: number | null,
 };
 
 export type CreatePost21Input = {
   customPostId: string,
   title: string,
   content: string,
+  _version?: number | null,
 };
 
 export type ModelPost21ConditionInput = {
@@ -503,12 +570,16 @@ export type Post21 = {
   comments?: ModelComment21Connection | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type ModelComment21Connection = {
   __typename: "ModelComment21Connection",
   items:  Array<Comment21 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type Comment21 = {
@@ -517,6 +588,9 @@ export type Comment21 = {
   content: string,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
   post21CommentsId?: string | null,
   post21CommentsTitle?: string | null,
 };
@@ -525,16 +599,19 @@ export type UpdatePost21Input = {
   customPostId: string,
   title: string,
   content?: string | null,
+  _version?: number | null,
 };
 
 export type DeletePost21Input = {
   customPostId: string,
   title: string,
+  _version?: number | null,
 };
 
 export type CreateComment21Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
   post21CommentsId?: string | null,
   post21CommentsTitle?: string | null,
 };
@@ -550,6 +627,7 @@ export type ModelComment21ConditionInput = {
 export type UpdateComment21Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
   post21CommentsId?: string | null,
   post21CommentsTitle?: string | null,
 };
@@ -557,11 +635,13 @@ export type UpdateComment21Input = {
 export type DeleteComment21Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
 };
 
 export type CreatePost22Input = {
   customPostId: string,
   title: string,
+  _version?: number | null,
 };
 
 export type ModelPost22ConditionInput = {
@@ -577,12 +657,16 @@ export type Post22 = {
   comments?: ModelComment22Connection | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type ModelComment22Connection = {
   __typename: "ModelComment22Connection",
   items:  Array<Comment22 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type Comment22 = {
@@ -592,6 +676,9 @@ export type Comment22 = {
   post?: Post22 | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
   post22CommentsId?: string | null,
   post22CommentsTitle?: string | null,
 };
@@ -599,16 +686,19 @@ export type Comment22 = {
 export type UpdatePost22Input = {
   customPostId: string,
   title: string,
+  _version?: number | null,
 };
 
 export type DeletePost22Input = {
   customPostId: string,
   title: string,
+  _version?: number | null,
 };
 
 export type CreateComment22Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
   post22CommentsId?: string | null,
   post22CommentsTitle?: string | null,
 };
@@ -624,6 +714,7 @@ export type ModelComment22ConditionInput = {
 export type UpdateComment22Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
   post22CommentsId?: string | null,
   post22CommentsTitle?: string | null,
 };
@@ -631,6 +722,7 @@ export type UpdateComment22Input = {
 export type DeleteComment22Input = {
   customCommentId: string,
   content: string,
+  _version?: number | null,
 };
 
 export type CreatePost31Input = {
@@ -638,6 +730,7 @@ export type CreatePost31Input = {
   title: string,
   content?: string | null,
   id?: string | null,
+  _version?: number | null,
 };
 
 export type ModelPost31ConditionInput = {
@@ -658,12 +751,16 @@ export type Post31 = {
   id: string,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type ModelPostTags31Connection = {
   __typename: "ModelPostTags31Connection",
   items:  Array<PostTags31 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type PostTags31 = {
@@ -676,6 +773,9 @@ export type PostTags31 = {
   tag31: Tag31,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type Tag31 = {
@@ -685,6 +785,9 @@ export type Tag31 = {
   posts?: ModelPostTags31Connection | null,
   createdAt: string,
   updatedAt: string,
+  _version: number,
+  _deleted?: boolean | null,
+  _lastChangedAt: number,
 };
 
 export type UpdatePost31Input = {
@@ -692,15 +795,18 @@ export type UpdatePost31Input = {
   title?: string | null,
   content?: string | null,
   id: string,
+  _version?: number | null,
 };
 
 export type DeletePost31Input = {
   id: string,
+  _version?: number | null,
 };
 
 export type CreateTag31Input = {
   customTagId: string,
   label: string,
+  _version?: number | null,
 };
 
 export type ModelTag31ConditionInput = {
@@ -712,11 +818,13 @@ export type ModelTag31ConditionInput = {
 export type UpdateTag31Input = {
   customTagId: string,
   label: string,
+  _version?: number | null,
 };
 
 export type DeleteTag31Input = {
   customTagId: string,
   label: string,
+  _version?: number | null,
 };
 
 export type CreatePostTags31Input = {
@@ -724,6 +832,7 @@ export type CreatePostTags31Input = {
   post31ID: string,
   tag31ID: string,
   tag31label: string,
+  _version?: number | null,
 };
 
 export type ModelPostTags31ConditionInput = {
@@ -740,10 +849,12 @@ export type UpdatePostTags31Input = {
   post31ID?: string | null,
   tag31ID?: string | null,
   tag31label?: string | null,
+  _version?: number | null,
 };
 
 export type DeletePostTags31Input = {
   id: string,
+  _version?: number | null,
 };
 
 export type ModelTodoFilterInput = {
@@ -765,6 +876,7 @@ export type ModelTodoConnection = {
   __typename: "ModelTodoConnection",
   items:  Array<Todo | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelStringKeyConditionInput = {
@@ -792,6 +904,7 @@ export type ModelTodo2Connection = {
   __typename: "ModelTodo2Connection",
   items:  Array<Todo2 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTodo3FilterInput = {
@@ -810,6 +923,7 @@ export type ModelTodo3Connection = {
   __typename: "ModelTodo3Connection",
   items:  Array<Todo3 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTodo4FilterInput = {
@@ -827,6 +941,7 @@ export type ModelTodo4Connection = {
   __typename: "ModelTodo4Connection",
   items:  Array<Todo4 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTodo5FilterInput = {
@@ -841,6 +956,7 @@ export type ModelTodo5Connection = {
   __typename: "ModelTodo5Connection",
   items:  Array<Todo5 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTodo6FilterInput = {
@@ -858,6 +974,7 @@ export type ModelTodo6Connection = {
   __typename: "ModelTodo6Connection",
   items:  Array<Todo6 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTodo7PrimaryCompositeKeyConditionInput = {
@@ -890,6 +1007,7 @@ export type ModelTodo7Connection = {
   __typename: "ModelTodo7Connection",
   items:  Array<Todo7 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelProject11FilterInput = {
@@ -907,6 +1025,7 @@ export type ModelProject11Connection = {
   __typename: "ModelProject11Connection",
   items:  Array<Project11 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTeam11FilterInput = {
@@ -922,6 +1041,7 @@ export type ModelTeam11Connection = {
   __typename: "ModelTeam11Connection",
   items:  Array<Team11 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelProject12FilterInput = {
@@ -939,6 +1059,7 @@ export type ModelProject12Connection = {
   __typename: "ModelProject12Connection",
   items:  Array<Project12 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTeam12FilterInput = {
@@ -956,6 +1077,7 @@ export type ModelTeam12Connection = {
   __typename: "ModelTeam12Connection",
   items:  Array<Team12 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelPost21FilterInput = {
@@ -971,6 +1093,7 @@ export type ModelPost21Connection = {
   __typename: "ModelPost21Connection",
   items:  Array<Post21 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelComment21FilterInput = {
@@ -995,6 +1118,7 @@ export type ModelPost22Connection = {
   __typename: "ModelPost22Connection",
   items:  Array<Post22 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelComment22FilterInput = {
@@ -1020,6 +1144,7 @@ export type ModelPost31Connection = {
   __typename: "ModelPost31Connection",
   items:  Array<Post31 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelTag31FilterInput = {
@@ -1034,6 +1159,7 @@ export type ModelTag31Connection = {
   __typename: "ModelTag31Connection",
   items:  Array<Tag31 | null >,
   nextToken?: string | null,
+  startedAt?: number | null,
 };
 
 export type ModelPostTags31FilterInput = {
@@ -1059,6 +1185,9 @@ export type CreateTodoMutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1075,6 +1204,9 @@ export type UpdateTodoMutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1091,6 +1223,9 @@ export type DeleteTodoMutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1107,6 +1242,9 @@ export type CreateTodo2Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1123,6 +1261,9 @@ export type UpdateTodo2Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1139,6 +1280,9 @@ export type DeleteTodo2Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1156,6 +1300,9 @@ export type CreateTodo3Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1173,6 +1320,9 @@ export type UpdateTodo3Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1190,6 +1340,9 @@ export type DeleteTodo3Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1206,6 +1359,9 @@ export type CreateTodo4Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1222,6 +1378,9 @@ export type UpdateTodo4Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1238,6 +1397,9 @@ export type DeleteTodo4Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1254,6 +1416,9 @@ export type CreateTodo5Mutation = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1270,6 +1435,9 @@ export type UpdateTodo5Mutation = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1286,6 +1454,9 @@ export type DeleteTodo5Mutation = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1302,6 +1473,9 @@ export type CreateTodo6Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1318,6 +1492,9 @@ export type UpdateTodo6Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1334,6 +1511,9 @@ export type DeleteTodo6Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1350,6 +1530,9 @@ export type CreateTodo7Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1366,6 +1549,9 @@ export type UpdateTodo7Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1382,6 +1568,9 @@ export type DeleteTodo7Mutation = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1403,9 +1592,15 @@ export type CreateProject11Mutation = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -1429,9 +1624,15 @@ export type UpdateProject11Mutation = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -1455,9 +1656,15 @@ export type DeleteProject11Mutation = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -1476,6 +1683,9 @@ export type CreateTeam11Mutation = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1492,6 +1702,9 @@ export type UpdateTeam11Mutation = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1508,6 +1721,9 @@ export type DeleteTeam11Mutation = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1534,16 +1750,25 @@ export type CreateProject12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -1572,16 +1797,25 @@ export type UpdateProject12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -1610,16 +1844,25 @@ export type DeleteProject12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -1648,16 +1891,25 @@ export type CreateTeam12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -1686,16 +1938,25 @@ export type UpdateTeam12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -1724,16 +1985,25 @@ export type DeleteTeam12Mutation = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -1758,13 +2028,20 @@ export type CreatePost21Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1787,13 +2064,20 @@ export type UpdatePost21Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1816,13 +2100,20 @@ export type DeletePost21Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1838,6 +2129,9 @@ export type CreateComment21Mutation = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -1855,6 +2149,9 @@ export type UpdateComment21Mutation = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -1872,6 +2169,9 @@ export type DeleteComment21Mutation = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -1895,13 +2195,20 @@ export type CreatePost22Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1923,13 +2230,20 @@ export type UpdatePost22Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1951,13 +2265,20 @@ export type DeletePost22Mutation = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -1978,12 +2299,19 @@ export type CreateComment22Mutation = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -2006,12 +2334,19 @@ export type UpdateComment22Mutation = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -2034,12 +2369,19 @@ export type DeleteComment22Mutation = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -2066,12 +2408,19 @@ export type CreatePost31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2096,12 +2445,19 @@ export type UpdatePost31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2126,12 +2482,19 @@ export type DeletePost31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2155,11 +2518,18 @@ export type CreateTag31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2183,11 +2553,18 @@ export type UpdateTag31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2211,11 +2588,18 @@ export type DeleteTag31Mutation = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2239,10 +2623,14 @@ export type CreatePostTags31Mutation = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -2251,12 +2639,19 @@ export type CreatePostTags31Mutation = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2280,10 +2675,14 @@ export type UpdatePostTags31Mutation = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -2292,12 +2691,19 @@ export type UpdatePostTags31Mutation = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2321,10 +2727,14 @@ export type DeletePostTags31Mutation = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -2333,12 +2743,19 @@ export type DeletePostTags31Mutation = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2354,6 +2771,9 @@ export type GetTodoQuery = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2375,8 +2795,38 @@ export type ListTodosQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodosQueryVariables = {
+  filter?: ModelTodoFilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodosQuery = {
+  syncTodos?:  {
+    __typename: "ModelTodoConnection",
+    items:  Array< {
+      __typename: "Todo",
+      customId: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2393,6 +2843,9 @@ export type GetTodo2Query = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2415,8 +2868,38 @@ export type ListTodo2sQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo2sQueryVariables = {
+  filter?: ModelTodo2FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo2sQuery = {
+  syncTodo2s?:  {
+    __typename: "ModelTodo2Connection",
+    items:  Array< {
+      __typename: "Todo2",
+      customId: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2433,6 +2916,9 @@ export type GetTodo3Query = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2453,8 +2939,39 @@ export type ListTodo3sQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo3sQueryVariables = {
+  filter?: ModelTodo3FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo3sQuery = {
+  syncTodo3s?:  {
+    __typename: "ModelTodo3Connection",
+    items:  Array< {
+      __typename: "Todo3",
+      id: string,
+      customId: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2470,6 +2987,9 @@ export type GetTodo4Query = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2489,8 +3009,38 @@ export type ListTodo4sQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo4sQueryVariables = {
+  filter?: ModelTodo4FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo4sQuery = {
+  syncTodo4s?:  {
+    __typename: "ModelTodo4Connection",
+    items:  Array< {
+      __typename: "Todo4",
+      id: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2506,6 +3056,9 @@ export type GetTodo5Query = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2525,8 +3078,38 @@ export type ListTodo5sQuery = {
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo5sQueryVariables = {
+  filter?: ModelTodo5FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo5sQuery = {
+  syncTodo5s?:  {
+    __typename: "ModelTodo5Connection",
+    items:  Array< {
+      __typename: "Todo5",
+      name: string,
+      description?: string | null,
+      id: string,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2543,6 +3126,9 @@ export type GetTodo6Query = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2565,8 +3151,38 @@ export type ListTodo6sQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo6sQueryVariables = {
+  filter?: ModelTodo6FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo6sQuery = {
+  syncTodo6s?:  {
+    __typename: "ModelTodo6Connection",
+    items:  Array< {
+      __typename: "Todo6",
+      id: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2584,6 +3200,9 @@ export type GetTodo7Query = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2606,8 +3225,38 @@ export type ListTodo7sQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTodo7sQueryVariables = {
+  filter?: ModelTodo7FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTodo7sQuery = {
+  syncTodo7s?:  {
+    __typename: "ModelTodo7Connection",
+    items:  Array< {
+      __typename: "Todo7",
+      id: string,
+      name: string,
+      description?: string | null,
+      createdAt: string,
+      updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2629,9 +3278,15 @@ export type GetProject11Query = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -2661,13 +3316,59 @@ export type ListProject11sQuery = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project11TeamId?: string | null,
       project11TeamName?: string | null,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncProject11sQueryVariables = {
+  filter?: ModelProject11FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncProject11sQuery = {
+  syncProject11s?:  {
+    __typename: "ModelProject11Connection",
+    items:  Array< {
+      __typename: "Project11",
+      customProjectId: string,
+      name: string,
+      description: string,
+      team?:  {
+        __typename: "Team11",
+        customTeamId: string,
+        name: string,
+        description: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+      project11TeamId?: string | null,
+      project11TeamName?: string | null,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2684,6 +3385,9 @@ export type GetTeam11Query = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2706,8 +3410,38 @@ export type ListTeam11sQuery = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTeam11sQueryVariables = {
+  filter?: ModelTeam11FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTeam11sQuery = {
+  syncTeam11s?:  {
+    __typename: "ModelTeam11Connection",
+    items:  Array< {
+      __typename: "Team11",
+      customTeamId: string,
+      name: string,
+      description: string,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2734,16 +3468,25 @@ export type GetProject12Query = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -2773,15 +3516,63 @@ export type ListProject12sQuery = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncProject12sQueryVariables = {
+  filter?: ModelProject12FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncProject12sQuery = {
+  syncProject12s?:  {
+    __typename: "ModelProject12Connection",
+    items:  Array< {
+      __typename: "Project12",
+      customProjectId: string,
+      name: string,
+      description: string,
+      team?:  {
+        __typename: "Team12",
+        customTeamId: string,
+        name: string,
+        description: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+        team12ProjectId?: string | null,
+        team12ProjectName?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+      project12TeamId?: string | null,
+      project12TeamName?: string | null,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2808,16 +3599,25 @@ export type GetTeam12Query = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -2847,15 +3647,63 @@ export type ListTeam12sQuery = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTeam12sQueryVariables = {
+  filter?: ModelTeam12FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTeam12sQuery = {
+  syncTeam12s?:  {
+    __typename: "ModelTeam12Connection",
+    items:  Array< {
+      __typename: "Team12",
+      customTeamId: string,
+      name: string,
+      description: string,
+      project?:  {
+        __typename: "Project12",
+        customProjectId: string,
+        name: string,
+        description: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+        project12TeamId?: string | null,
+        project12TeamName?: string | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+      team12ProjectId?: string | null,
+      team12ProjectName?: string | null,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2878,13 +3726,20 @@ export type GetPost21Query = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -2908,11 +3763,47 @@ export type ListPost21sQuery = {
       comments?:  {
         __typename: "ModelComment21Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncPost21sQueryVariables = {
+  filter?: ModelPost21FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncPost21sQuery = {
+  syncPost21s?:  {
+    __typename: "ModelPost21Connection",
+    items:  Array< {
+      __typename: "Post21",
+      customPostId: string,
+      title: string,
+      content: string,
+      comments?:  {
+        __typename: "ModelComment21Connection",
+        nextToken?: string | null,
+        startedAt?: number | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2928,6 +3819,9 @@ export type GetComment21Query = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -2951,10 +3845,41 @@ export type ListComment21sQuery = {
       content: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       post21CommentsId?: string | null,
       post21CommentsTitle?: string | null,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncComment21sQueryVariables = {
+  filter?: ModelComment21FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncComment21sQuery = {
+  syncComment21s?:  {
+    __typename: "ModelComment21Connection",
+    items:  Array< {
+      __typename: "Comment21",
+      customCommentId: string,
+      content: string,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+      post21CommentsId?: string | null,
+      post21CommentsTitle?: string | null,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -2976,13 +3901,20 @@ export type GetPost22Query = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3005,11 +3937,46 @@ export type ListPost22sQuery = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncPost22sQueryVariables = {
+  filter?: ModelPost22FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncPost22sQuery = {
+  syncPost22s?:  {
+    __typename: "ModelPost22Connection",
+    items:  Array< {
+      __typename: "Post22",
+      customPostId: string,
+      title: string,
+      comments?:  {
+        __typename: "ModelComment22Connection",
+        nextToken?: string | null,
+        startedAt?: number | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3030,12 +3997,19 @@ export type GetComment22Query = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -3063,13 +4037,57 @@ export type ListComment22sQuery = {
         title: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       post22CommentsId?: string | null,
       post22CommentsTitle?: string | null,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncComment22sQueryVariables = {
+  filter?: ModelComment22FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncComment22sQuery = {
+  syncComment22s?:  {
+    __typename: "ModelComment22Connection",
+    items:  Array< {
+      __typename: "Comment22",
+      customCommentId: string,
+      content: string,
+      post?:  {
+        __typename: "Post22",
+        customPostId: string,
+        title: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+      post22CommentsId?: string | null,
+      post22CommentsTitle?: string | null,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3093,12 +4111,19 @@ export type GetPost31Query = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3119,12 +4144,49 @@ export type ListPost31sQuery = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncPost31sQueryVariables = {
+  filter?: ModelPost31FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncPost31sQuery = {
+  syncPost31s?:  {
+    __typename: "ModelPost31Connection",
+    items:  Array< {
+      __typename: "Post31",
+      customPostId: string,
+      title: string,
+      content?: string | null,
+      tags?:  {
+        __typename: "ModelPostTags31Connection",
+        nextToken?: string | null,
+        startedAt?: number | null,
+      } | null,
+      id: string,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3148,11 +4210,18 @@ export type GetTag31Query = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3175,11 +4244,46 @@ export type ListTag31sQuery = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncTag31sQueryVariables = {
+  filter?: ModelTag31FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncTag31sQuery = {
+  syncTag31s?:  {
+    __typename: "ModelTag31Connection",
+    items:  Array< {
+      __typename: "Tag31",
+      customTagId: string,
+      label: string,
+      posts?:  {
+        __typename: "ModelPostTags31Connection",
+        nextToken?: string | null,
+        startedAt?: number | null,
+      } | null,
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3202,10 +4306,14 @@ export type GetPostTags31Query = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -3214,12 +4322,19 @@ export type GetPostTags31Query = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3246,6 +4361,9 @@ export type ListPostTags31sQuery = {
         id: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       },
       tag31:  {
         __typename: "Tag31",
@@ -3253,11 +4371,67 @@ export type ListPostTags31sQuery = {
         label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       },
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
+  } | null,
+};
+
+export type SyncPostTags31sQueryVariables = {
+  filter?: ModelPostTags31FilterInput | null,
+  limit?: number | null,
+  nextToken?: string | null,
+  lastSync?: number | null,
+};
+
+export type SyncPostTags31sQuery = {
+  syncPostTags31s?:  {
+    __typename: "ModelPostTags31Connection",
+    items:  Array< {
+      __typename: "PostTags31",
+      id: string,
+      post31ID: string,
+      tag31ID: string,
+      tag31label: string,
+      post31:  {
+        __typename: "Post31",
+        customPostId: string,
+        title: string,
+        content?: string | null,
+        id: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+      },
+      tag31:  {
+        __typename: "Tag31",
+        customTagId: string,
+        label: string,
+        createdAt: string,
+        updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
+      },
+      createdAt: string,
+      updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
+    } | null >,
+    nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3281,8 +4455,12 @@ export type TodoByCustomIdAndCreatedAtQuery = {
       description?: string | null,
       createdAt: string,
       updatedAt?: string | null,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null >,
     nextToken?: string | null,
+    startedAt?: number | null,
   } | null,
 };
 
@@ -3294,6 +4472,9 @@ export type OnCreateTodoSubscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3305,6 +4486,9 @@ export type OnUpdateTodoSubscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3316,6 +4500,9 @@ export type OnDeleteTodoSubscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3327,6 +4514,9 @@ export type OnCreateTodo2Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3338,6 +4528,9 @@ export type OnUpdateTodo2Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3349,6 +4542,9 @@ export type OnDeleteTodo2Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3361,6 +4557,9 @@ export type OnCreateTodo3Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3373,6 +4572,9 @@ export type OnUpdateTodo3Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3385,6 +4587,9 @@ export type OnDeleteTodo3Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3396,6 +4601,9 @@ export type OnCreateTodo4Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3407,6 +4615,9 @@ export type OnUpdateTodo4Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3418,6 +4629,9 @@ export type OnDeleteTodo4Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3429,6 +4643,9 @@ export type OnCreateTodo5Subscription = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3440,6 +4657,9 @@ export type OnUpdateTodo5Subscription = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3451,6 +4671,9 @@ export type OnDeleteTodo5Subscription = {
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3462,6 +4685,9 @@ export type OnCreateTodo6Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3473,6 +4699,9 @@ export type OnUpdateTodo6Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3484,6 +4713,9 @@ export type OnDeleteTodo6Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3495,6 +4727,9 @@ export type OnCreateTodo7Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3506,6 +4741,9 @@ export type OnUpdateTodo7Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3517,6 +4755,9 @@ export type OnDeleteTodo7Subscription = {
     description?: string | null,
     createdAt: string,
     updatedAt?: string | null,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3533,9 +4774,15 @@ export type OnCreateProject11Subscription = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -3554,9 +4801,15 @@ export type OnUpdateProject11Subscription = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -3575,9 +4828,15 @@ export type OnDeleteProject11Subscription = {
       description: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project11TeamId?: string | null,
     project11TeamName?: string | null,
   } | null,
@@ -3591,6 +4850,9 @@ export type OnCreateTeam11Subscription = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3602,6 +4864,9 @@ export type OnUpdateTeam11Subscription = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3613,6 +4878,9 @@ export type OnDeleteTeam11Subscription = {
     description: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3634,16 +4902,25 @@ export type OnCreateProject12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -3667,16 +4944,25 @@ export type OnUpdateProject12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -3700,16 +4986,25 @@ export type OnDeleteProject12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         project12TeamId?: string | null,
         project12TeamName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       team12ProjectId?: string | null,
       team12ProjectName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     project12TeamId?: string | null,
     project12TeamName?: string | null,
   } | null,
@@ -3733,16 +5028,25 @@ export type OnCreateTeam12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -3766,16 +5070,25 @@ export type OnUpdateTeam12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -3799,16 +5112,25 @@ export type OnDeleteTeam12Subscription = {
         description: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         team12ProjectId?: string | null,
         team12ProjectName?: string | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
       project12TeamId?: string | null,
       project12TeamName?: string | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     team12ProjectId?: string | null,
     team12ProjectName?: string | null,
   } | null,
@@ -3828,13 +5150,20 @@ export type OnCreatePost21Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3852,13 +5181,20 @@ export type OnUpdatePost21Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3876,13 +5212,20 @@ export type OnDeletePost21Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post21CommentsId?: string | null,
         post21CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3893,6 +5236,9 @@ export type OnCreateComment21Subscription = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -3905,6 +5251,9 @@ export type OnUpdateComment21Subscription = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -3917,6 +5266,9 @@ export type OnDeleteComment21Subscription = {
     content: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post21CommentsId?: string | null,
     post21CommentsTitle?: string | null,
   } | null,
@@ -3935,13 +5287,20 @@ export type OnCreatePost22Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3958,13 +5317,20 @@ export type OnUpdatePost22Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -3981,13 +5347,20 @@ export type OnDeletePost22Subscription = {
         content: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
         post22CommentsId?: string | null,
         post22CommentsTitle?: string | null,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4003,12 +5376,19 @@ export type OnCreateComment22Subscription = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -4026,12 +5406,19 @@ export type OnUpdateComment22Subscription = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -4049,12 +5436,19 @@ export type OnDeleteComment22Subscription = {
       comments?:  {
         __typename: "ModelComment22Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
     post22CommentsId?: string | null,
     post22CommentsTitle?: string | null,
   } | null,
@@ -4076,12 +5470,19 @@ export type OnCreatePost31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4101,12 +5502,19 @@ export type OnUpdatePost31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4126,12 +5534,19 @@ export type OnDeletePost31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     id: string,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4150,11 +5565,18 @@ export type OnCreateTag31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4173,11 +5595,18 @@ export type OnUpdateTag31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4196,11 +5625,18 @@ export type OnDeleteTag31Subscription = {
         tag31label: string,
         createdAt: string,
         updatedAt: string,
+        _version: number,
+        _deleted?: boolean | null,
+        _lastChangedAt: number,
       } | null >,
       nextToken?: string | null,
+      startedAt?: number | null,
     } | null,
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4219,10 +5655,14 @@ export type OnCreatePostTags31Subscription = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -4231,12 +5671,19 @@ export type OnCreatePostTags31Subscription = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4255,10 +5702,14 @@ export type OnUpdatePostTags31Subscription = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -4267,12 +5718,19 @@ export type OnUpdatePostTags31Subscription = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };
 
@@ -4291,10 +5749,14 @@ export type OnDeletePostTags31Subscription = {
       tags?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       id: string,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     tag31:  {
       __typename: "Tag31",
@@ -4303,11 +5765,18 @@ export type OnDeletePostTags31Subscription = {
       posts?:  {
         __typename: "ModelPostTags31Connection",
         nextToken?: string | null,
+        startedAt?: number | null,
       } | null,
       createdAt: string,
       updatedAt: string,
+      _version: number,
+      _deleted?: boolean | null,
+      _lastChangedAt: number,
     },
     createdAt: string,
     updatedAt: string,
+    _version: number,
+    _deleted?: boolean | null,
+    _lastChangedAt: number,
   } | null,
 };

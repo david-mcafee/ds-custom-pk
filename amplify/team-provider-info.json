@@ -10,6 +10,14 @@
       "StackName": "amplify-dscustompk-dev-152904",
       "StackId": "arn:aws:cloudformation:us-west-2:055345086115:stack/amplify-dscustompk-dev-152904/e82ced70-f8aa-11ec-8a56-0a3c6757333b",
       "AmplifyAppId": "dsqkw88696gx3"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dsqkw88696gx3",
+          "type": "manual"
+        }
+      }
     }
   }
 }

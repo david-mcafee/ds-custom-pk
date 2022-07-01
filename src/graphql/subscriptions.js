@@ -9,6 +9,9 @@ export const onCreateTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -20,6 +23,9 @@ export const onUpdateTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -31,6 +37,9 @@ export const onDeleteTodo = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -42,6 +51,9 @@ export const onCreateTodo2 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -53,6 +65,9 @@ export const onUpdateTodo2 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -64,6 +79,9 @@ export const onDeleteTodo2 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -76,6 +94,9 @@ export const onCreateTodo3 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -88,6 +109,9 @@ export const onUpdateTodo3 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -100,6 +124,9 @@ export const onDeleteTodo3 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -111,6 +138,9 @@ export const onCreateTodo4 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -122,6 +152,9 @@ export const onUpdateTodo4 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -133,6 +166,9 @@ export const onDeleteTodo4 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -144,6 +180,9 @@ export const onCreateTodo5 = /* GraphQL */ `
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -155,6 +194,9 @@ export const onUpdateTodo5 = /* GraphQL */ `
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -166,6 +208,9 @@ export const onDeleteTodo5 = /* GraphQL */ `
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -177,6 +222,9 @@ export const onCreateTodo6 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -188,6 +236,9 @@ export const onUpdateTodo6 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -199,6 +250,9 @@ export const onDeleteTodo6 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -210,6 +264,9 @@ export const onCreateTodo7 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -221,6 +278,9 @@ export const onUpdateTodo7 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -232,6 +292,9 @@ export const onDeleteTodo7 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -247,9 +310,15 @@ export const onCreateProject11 = /* GraphQL */ `
         description
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project11TeamId
       project11TeamName
     }
@@ -267,9 +336,15 @@ export const onUpdateProject11 = /* GraphQL */ `
         description
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project11TeamId
       project11TeamName
     }
@@ -287,9 +362,15 @@ export const onDeleteProject11 = /* GraphQL */ `
         description
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project11TeamId
       project11TeamName
     }
@@ -303,6 +384,9 @@ export const onCreateTeam11 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -314,6 +398,9 @@ export const onUpdateTeam11 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -325,6 +412,9 @@ export const onDeleteTeam11 = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -344,16 +434,25 @@ export const onCreateProject12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           project12TeamId
           project12TeamName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         team12ProjectId
         team12ProjectName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project12TeamId
       project12TeamName
     }
@@ -375,16 +474,25 @@ export const onUpdateProject12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           project12TeamId
           project12TeamName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         team12ProjectId
         team12ProjectName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project12TeamId
       project12TeamName
     }
@@ -406,16 +514,25 @@ export const onDeleteProject12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           project12TeamId
           project12TeamName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         team12ProjectId
         team12ProjectName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       project12TeamId
       project12TeamName
     }
@@ -437,16 +554,25 @@ export const onCreateTeam12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           team12ProjectId
           team12ProjectName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         project12TeamId
         project12TeamName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       team12ProjectId
       team12ProjectName
     }
@@ -468,16 +594,25 @@ export const onUpdateTeam12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           team12ProjectId
           team12ProjectName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         project12TeamId
         project12TeamName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       team12ProjectId
       team12ProjectName
     }
@@ -499,16 +634,25 @@ export const onDeleteTeam12 = /* GraphQL */ `
           description
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           team12ProjectId
           team12ProjectName
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         project12TeamId
         project12TeamName
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       team12ProjectId
       team12ProjectName
     }
@@ -526,13 +670,20 @@ export const onCreatePost21 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post21CommentsId
           post21CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -548,13 +699,20 @@ export const onUpdatePost21 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post21CommentsId
           post21CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -570,13 +728,20 @@ export const onDeletePost21 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post21CommentsId
           post21CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -587,6 +752,9 @@ export const onCreateComment21 = /* GraphQL */ `
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post21CommentsId
       post21CommentsTitle
     }
@@ -599,6 +767,9 @@ export const onUpdateComment21 = /* GraphQL */ `
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post21CommentsId
       post21CommentsTitle
     }
@@ -611,6 +782,9 @@ export const onDeleteComment21 = /* GraphQL */ `
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post21CommentsId
       post21CommentsTitle
     }
@@ -627,13 +801,20 @@ export const onCreatePost22 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post22CommentsId
           post22CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -648,13 +829,20 @@ export const onUpdatePost22 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post22CommentsId
           post22CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -669,13 +857,20 @@ export const onDeletePost22 = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           post22CommentsId
           post22CommentsTitle
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -689,12 +884,19 @@ export const onCreateComment22 = /* GraphQL */ `
         title
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post22CommentsId
       post22CommentsTitle
     }
@@ -710,12 +912,19 @@ export const onUpdateComment22 = /* GraphQL */ `
         title
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post22CommentsId
       post22CommentsTitle
     }
@@ -731,12 +940,19 @@ export const onDeleteComment22 = /* GraphQL */ `
         title
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       post22CommentsId
       post22CommentsTitle
     }
@@ -756,12 +972,19 @@ export const onCreatePost31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -779,12 +1002,19 @@ export const onUpdatePost31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -802,12 +1032,19 @@ export const onDeletePost31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       id
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -824,11 +1061,18 @@ export const onCreateTag31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -845,11 +1089,18 @@ export const onUpdateTag31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -866,11 +1117,18 @@ export const onDeleteTag31 = /* GraphQL */ `
           tag31label
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -887,22 +1145,33 @@ export const onCreatePostTags31 = /* GraphQL */ `
         content
         tags {
           nextToken
+          startedAt
         }
         id
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       tag31 {
         customTagId
         label
         posts {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -919,22 +1188,33 @@ export const onUpdatePostTags31 = /* GraphQL */ `
         content
         tags {
           nextToken
+          startedAt
         }
         id
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       tag31 {
         customTagId
         label
         posts {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -951,22 +1231,33 @@ export const onDeletePostTags31 = /* GraphQL */ `
         content
         tags {
           nextToken
+          startedAt
         }
         id
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       tag31 {
         customTagId
         label
         posts {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
